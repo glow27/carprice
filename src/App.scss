@@ -1,0 +1,132 @@
+html {
+  background: url('./images/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+.time {
+  color: white;
+  font-size: 1rem;
+  text-align: right;
+  margin: 0.5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.popup-pic {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+
+  img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 60%;
+  }
+}
+
+.top {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+
+  img {
+    width: 60%;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: flex-end;
+  
+
+  .circle {
+    margin: 0.5rem;
+    background-color: grey;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+  
+  }
+  .active {
+    background-color: white;
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(100px);
+  margin-bottom: 1%;
+
+  img {
+    width: 12%;
+    margin: 1%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (min-device-width: 568px) and (max-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .top {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    img {
+      width: 40%;
+    }
+  }
+
+  .bottom {
+    justify-content: space-around;
+    img {
+      width: 8%;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  .top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .bottom {
+    img {
+      width: 15%;
+    }
+  }
+}
