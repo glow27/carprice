@@ -4,7 +4,7 @@
 
 #### `npm start`
 
-![alt text] (https://github.com/glow27/carprice/blob/main/Capture22.PNG)
+![alt text](https://github.com/glow27/carprice/blob/main/Capture22.PNG)
 
-
+![alt text](https://github.com/glow27/carprice/blob/main/Capture.PNG)
 
