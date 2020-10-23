@@ -6,5 +6,5 @@
 
 ![alt text](https://github.com/glow27/carprice/blob/main/1111.png)
 
-![alt text](https://github.com/glow27/carprice/blob/main/Capture22.PNG)
+![alt text](https://github.com/glow27/carprice/blob/main/Capture2211.png)
 
